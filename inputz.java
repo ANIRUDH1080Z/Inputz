@@ -10,16 +10,33 @@ class a1
     public void buffer()                                                                  //method for taking input by using buffer reader class // 
     throws IOException
     { 	
-	System.out.println("_______________________________________________________________________________________________________________________");  //This is used only to beautify the programm//
+	System.out.println("_______________________________________________________________________________________________________________________");  //This is used only to beautify the console output //
 	System.out.println("\n");
 	System.out.println("This number entered by buffer reader");
         BufferedReader inp = new BufferedReader (new InputStreamReader(System.in));       //Creating object of bufferreader class and  new keyword is for dynamically allocation //
-	System.out.print("Enter the number=> ");
-	int T= Integer.parseInt(inp.readLine());                                          //for taking a int type  as an input  // 
+
+	//for taking a int type  as an input  // 
+	
+	System.out.print("Enter the int type number=> ");
+	int T = Integer.parseInt(inp.readLine());
+	
+	//for taking a float type  as an input  // 
+	
+	System.out.print("Enter the float type number=> ");
+	float f = Float.parseFloat(inp.readLine());
+	
+	//for taking a string type  as an input  //
+ 	
+	System.out.print("Enter the string => ");
+	String s = inp.readLine();
+		
+	System.out.print("\n");
 	System.out.println("The number entered is=> "+T);
+	System.out.println("The float value entered is=> "+f);
+	System.out.println("The string entered is=> "+s);
+	System.out.print("\n\n");
 	System.out.println("_______________________________________________________________________________________________________________________");
 	System.out.println("\n");
-      
     } 
 } 
 
@@ -31,8 +48,21 @@ class a2
 	{
 		System.out.println("This number entered by scanner");
 		Scanner sc = new Scanner(System.in);                                     //Creating object of scanner class and  new keyword is for dynamically allocation //                                    
-		System.out.print("Enter the no => ");
-		int num = sc.nextInt();                                                  //for taking a int type  as an input // 
+		
+		//for taking a int type  as an input //
+
+		System.out.print("Enter the int type no => ");
+		int num = sc.nextInt();
+		
+		//for taking a int type  as an input //
+		System.out.print("Enter the float type no => ");
+		float fnum = sc.nextFloat();
+		
+		//for taking a string type  as an input // 
+
+		System.out.print("Enter the string => ");
+		String s = sc.next();		
+	                                                 
 		System.out.print("\n");
 		System.out.println("The no entered is => "+num);
 		System.out.println("_______________________________________________________________________________________________________________________");
